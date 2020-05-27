@@ -99,7 +99,7 @@ function deleteOldest(){
 
 function createCard(){
     console.log(ticker + " ticker count at card creation");
-    var card = $("<div class='card column' id='cardNumber"+ticker+"'><div class='card-image'><figure class='image is-5by3'><img class='card-image"+ticker+"' src='' alt='Placeholder image'></figure></div> <div class='card-content"+ticker+"'><p class='title is-3' id='title"+ticker+"'></p><div class='content insideCard"+ticker+"'></div><p class='title is-5'>Available Streaming Locations: </p></div></div>");
+    var card = $("<div class='card column is-one-quarter' id='cardNumber"+ticker+"'><div class='card-image'><figure class='image is-5by3'><img class='card-image"+ticker+"' src='' alt='Placeholder image'></figure></div> <div class='card-content"+ticker+"'><p class='title is-3' id='title"+ticker+"'></p><div class='content insideCard"+ticker+"'></div><p class='title is-5'>Available Streaming Locations: </p></div></div>");
     $("#resultsRow").prepend(card);
     deleteOldest();
 }
@@ -115,7 +115,7 @@ $("#searchBtn").on("click", function(event){
 
 });
 
-$("#clearBtn").on("click", function(event){
+$("#clearBtn").on("click", function(){
     // event.preventDefault();
     $("#resultsRow").empty();
     $("#resultsDiv").addClass("hide");
