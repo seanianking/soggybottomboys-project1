@@ -3,7 +3,7 @@
 Our site is a streaming search for movies and TV shows.
 
 ### link to the deployed website
-- https://tuckerv.github.io/soggybottomboys-project1/
+https://seanianking.github.io/soggybottomboys-project1/
 
 ## Contents
 * Landing / Search Page
